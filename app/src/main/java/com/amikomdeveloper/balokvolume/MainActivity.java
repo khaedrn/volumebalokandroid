@@ -12,6 +12,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     EditText edtpanjang, edtlebar, edttinggi;
     Button hitung;
+    private static final String STATE_RESULT = "state_result";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
     public void total(){
 
         String panjang = edtpanjang.getText().toString().trim();
